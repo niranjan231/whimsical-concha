@@ -1,0 +1,70 @@
+/* Product grid container */
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Individual product card */
+.product-1 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.475);
+    margin: 10px;
+    transition: border 0.3s ease;
+}
+
+/* Product image */
+.product-1 img {
+    width: 230px;
+    height: 230px;
+}
+
+/* Hover effect for product card */
+.product-1:hover {
+    border: 2px solid black;
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .product-1 {
+        width: 250px;
+        height: 350px;
+    }
+
+    .product-1 img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .product-1 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .product-1 img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Responsive adjustments for very small mobile screens */
+@media (max-width: 480px) {
+    .product-1 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .product-1 img {
+        width: 100%;
+        height: auto;
+    }
+}

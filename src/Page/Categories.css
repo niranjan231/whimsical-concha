@@ -1,0 +1,97 @@
+/* Center alignment for main app container */
+.App {
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    width: 150px;
+    height: 40px;
+    border: 2.5px solid rgba(0, 0, 0, 0.329);
+    background-color: white;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect for better UX */
+button:hover {
+    border: 2.5px solid rgba(0, 0, 0, 0.708);
+}
+
+/* Fixed style for active button */
+button.active {
+    background-color: rgba(0, 128, 0, 0.838); /* Change background color */
+    color: white; /* Change text color if needed */
+    border-color: white; /* Change border color */
+}
+
+/* Remove hover effect when active */
+button.active:hover {
+    border: 2.5px solid rgba(0, 0, 0, 0.329); /* Keep the border color same */
+    background-color: rgba(0, 128, 0, 0.838); /* Keep background color same */
+}
+
+/* Flexbox layout for app container */
+.app-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+
+/* Responsive for tablet screens and smaller */
+@media (max-width: 1024px) {
+    button {
+        width: 130px;
+        height: 35px;
+        margin: 15px;
+    }
+
+    .app-2 {
+        justify-content: space-between;
+    }
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    button {
+        width: 120px;
+        height: 30px;
+    }
+
+    .app-2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
+/* Responsive for very small mobile screens */
+@media (max-width: 480px) {
+    button {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .app-2 {
+        margin: 5px;
+    }
+}

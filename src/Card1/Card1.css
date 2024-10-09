@@ -1,0 +1,76 @@
+/* Default styles for larger screens */
+.card-1 {
+    width: 700px;
+    height: 650px;
+    margin: 5px;
+}
+.card-2 {
+    height: 650px;
+    width: 340px;
+    margin: 5px;
+}
+.card22 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 75px;
+    margin-right: 575px;
+    margin-top: 15px;
+}
+.card-3 img {
+    width: 340px;
+    height: 325px;
+    margin: 5px;
+}
+
+/* Responsive adjustments for medium screens (tablets and small desktops) */
+@media (max-width: 1024px) {
+    .card-1, .card-2 {
+        width: 100%;
+        height: auto;
+    }
+    .card22 {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-3 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive adjustments for smaller screens (mobiles) */
+@media (max-width: 768px) {
+    .card-1, .card-2 {
+        width: 100%;
+        height: auto;
+    }
+    .card22 {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-3 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Additional adjustments for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .card-1, .card-2 {
+        width: 100%;
+        height: auto;
+    }
+    .card22 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card-3 img {
+        width: 100%;
+        height: auto;
+    }
+}
